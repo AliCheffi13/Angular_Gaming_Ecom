@@ -1,0 +1,61 @@
+<div class="checkout-container container my-5">
+  <div class="row">
+    <!-- Récapitulatif de commande -->
+    <div class="col-md-6 order-summary">
+      <h3>3. Récapitulatif de votre commande</h3>
+      <ul class="list-group">
+        <li *ngFor="let item of cart" class="list-group-item">
+          <div class="d-flex align-items-center">
+            <img
+              [src]="item.image"
+              alt="{{ item.name }}"
+              class="img-thumbnail rounded-circle"
+              style="width: 50px; height: 50px; margin-right: 15px;"
+            />
+            <div>
+              <h5 class="mb-1">{{ item.name }}</h5>
+              <p class="text-muted mb-0">
+                Quantité : {{ item.quantity }} | Prix : {{ item.price }} TND
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="mt-3">
+        <h5 class="fw-bold">Total HTVA : {{ getTotalPriceHT() }} TND</h5>
+        <h5 class="fw-bold">Total TTC (TVA 19%) : {{ getTotalPriceTVA() | number: '1.2-2' }} TND</h5>
+      </div>
+    </div>
+
+    <!-- Mode de paiement -->
+    <div class="col-md-6 payment-section">
+      <h3>4. Mode de paiement</h3>
+      <!-- PayPal -->
+      <div id="paypal-button-container" class="payment-buttons mt-4"></div>
+      <!-- Stripe -->
+       <!-- Section pour Stripe -->
+      <div id="cardElementContainer" #cardElementContainer class="stripe-card-container"></div>
+      <button class="btn btn-sm btn-primary mt-4" (click)="payWithStripe()">Payer avec Stripe</button>
+    </div>
+  </div>
+
+  <!-- Affichage de la facture -->
+  <div class="invoice-section mt-4" *ngIf="invoiceData">
+    <h3>5.Facture</h3>
+    <p><strong>Nom :</strong> {{ invoiceData.user.name }}</p>
+    <p><strong>Email :</strong> {{ invoiceData.user.email }}</p>
+    <p><strong>Adresse :</strong> {{ invoiceData.user.address }}</p>
+    <p><strong>Mode de livraison :</strong> {{ invoiceData.user.shipping }}</p>
+    <ul>
+      <li *ngFor="let item of invoiceData.items">
+        {{ item.name }} x {{ item.quantity }} - {{ item.price }} TND
+      </li>
+    </ul>
+    <h4>Total TTC : {{ invoiceData.total }} TND</h4>
+  </div>
+
+  <!-- Boutons -->
+  <div class="text-center mt-4">
+    <button class="btn btn-success" (click)="printInvoice()" *ngIf="invoiceData">Imprimer la facture</button>
+  </div>
+</div>

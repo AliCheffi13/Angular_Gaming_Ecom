@@ -1,0 +1,104 @@
+/* General container styling */
+.container {
+  background: linear-gradient(135deg, #1e1e1e, #3e3e3e);
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Left section styling */
+.main-image img {
+  border: 3px solid #ff0000;
+  border-radius: 10px;
+  max-height: 400px;
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+}
+
+.image-thumbnails {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thumbnail-image {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnail-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+}
+
+/* Right section styling */
+.col-md-6 h1 {
+  font-size: 2.5rem;
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+
+.col-md-6 h3 {
+  font-size: 1.5rem;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.col-md-6 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.col-md-6 p strong {
+  color: #ff0000;
+}
+
+/* Quantity input styling */
+#quantity {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#quantity:focus {
+  outline: none;
+  border: 1px solid #ff4d4d;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.8);
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #ff0000;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.05);
+}
+
+.btn-primary:active {
+  background-color: #cc0000;
+  transform: scale(1);
+}

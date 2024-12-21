@@ -1,0 +1,149 @@
+{
+  "products": [
+    {
+      "id": "7",
+      "name": "PC Portable Gamer MSI GL65 i7 9è Gén 16Go 512 SSD",
+      "brand": "MSI ",
+      "price": 3995,
+      "reference": "GL65-9SD-067XFR",
+      "description": "Écran 15.6\" Full HD - Processeur Intel Core i7-9750H, up to 4.5 Ghz, 12 Mo de cache - Mémoire 16 Go  - Disque 1 To + 256 Go SSD - Carte graphique Nvidia GeForce GTX 1660 Ti, 6 Go de mémoire dédiée - Wifi - Bluetooth - USB 3.1 Type C - HDMI - RJ45 - Lecteur de cartes - Clavier rétroéclairé - Garantie 2 ans + SIM Orange Offerte 30 Go",
+      "category": "Laptops",
+      "image": "assets/images/pc1.jpg",
+      "image1": "assets/images/pc1.jpg",
+      "image2": "assets/images/pc2.jpg",
+      "image3": "assets/images/pc3.jpg",
+      "images": [
+        "assets/images/pc1.jpg",
+        "assets/images/pc2.jpg",
+        "assets/images/pc3.jpg"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Pc Portable Lenovo ThinkPad X1 Carbon Gen 12",
+      "brand": "Lenovo",
+      "price": 7459,
+      "reference": "21KDS9P400-3Y",
+      "description": "Écran tactile 14\" WUXGA (1920 x 1200 px), IPS - Processeur Intel Core Ultra 7 165U, (jusqu’à 4.9 GHz, 12 Mo de mémoire cache) - Mémoire 64 Go LPDDR5X - Disque SSD M.2 NVMe 1 To - Carte graphique Intel Graphics intégrée - 2x haut-parleurs de 2 W, Dolby Audio - Micros à double réseau - Caméra 5MP RVB et infrarouge (IR) avec obturateur de confidentialité pour webcam - 2x USB-C Thunderbolt 4 - 2x USB-A - HDMI 2.1 - Combo casque/micro - WiFi 6E - Bluetooth 5.3 - Clavier Rétroéclairé - Lecteur d'empreintes digitales - Windows 11 - Couleur Noir - Garantie 3 ans",
+      "category": "Laptops",
+      "image": "assets/images/or1.jpg",
+      "image1": "assets/images/or1.jpg",
+      "image2": "assets/images/or2.jpg",
+      "image3": "assets/images/or3.jpg",
+      "images": [
+        "assets/images/or1.jpg",
+        "assets/images/or2.jpg",
+        "assets/images/or3.jpg"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Souris Gaming BARACUDA MANTA BGM-041 - Noir",
+      "brand": "BARACUDA MANTA",
+      "price": 32,
+      "reference": "BGM-041BLK",
+      "description": "Chipset : INSTANT 825- Longueur du câble (m) : 1,5 - Compatibilité souris : Win 7 / 8 / 10 / 11 et Mac OS-Éclairage : RGB 16,8 millions de couleurs - Taux d'interrogation (Hz) : 1000 - Résolution (DPI) : 12800 - Interface : USB 2.0 - Type de capteur : Optique - Type : 8D - 8boutons",
+      "category": "Souris",
+      "image": "assets/images/s1.jpg",
+      "image1": "assets/images/s1.jpg",
+      "image2": "assets/images/s2.jpg",
+      "image3": "assets/images/s3.jpg",
+      "images": [
+        "assets/images/s1.jpg",
+        "assets/images/s2.jpg",
+        "assets/images/s3.jpg"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "SOURIS GAMING RAMPAGE DEFILADE RGB 12400 DPI",
+      "brand": "RAMPAGE DEFILADE",
+      "price": 69,
+      "reference": "SMX-R111",
+      "description": "SOURIS GAMING RAMPAGE DEFILADE RGB 12400 DPI - Rétroéclairage RGB - Résolution 12400 dpi - 8x Boutons - Accélération 30G - Poids 78g - Dimensions 122 x 63 x 41mm - Câble tressé 1.7m",
+      "category": "Souris",
+      "image": "assets/images/so1.jpg",
+      "image1": "assets/images/so1.jpg",
+      "image2": "assets/images/so2.jpg",
+      "image3": "assets/images/so3.jpg",
+      "images": [
+        "assets/images/so1.jpg",
+        "assets/images/so2.jpg",
+        "assets/images/so3.jpg"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "CLAVIER GAMING WHITE SHARK RONIN GK-2201",
+      "brand": "SHARK RONIN",
+      "price": 65,
+      "reference": "GK-2201",
+      "description": "Nombre de clés: 68 - Type de commutateur: Membrane - Disposition des touches: compacte - Durée de vie: Plus de 10 M de presse - 19 touches Anti-Ghosting - Éclairage: LED - effet arc-en-ciel - Matériel: Plastique - Jambes montantes supplémentaires - Interface: USB 2.0 - Longueur du câble: 1,5 (m) - Dimensions: 311 x 102 x 38 (mm) - Poids: 470 (g) - Couleur Noir - Garantie 1 an",
+      "category": "Claviers",
+      "image": "assets/images/cl.jpg",
+      "image1": "assets/images/cl.jpg",
+      "image2": "assets/images/cl2.jpg",
+      "image3": "assets/images/cl3.jpg",
+      "images": [
+        "assets/images/cl.jpg",
+        "assets/images/cl2.jpg",
+        "assets/images/cl3.jpg"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Clavier gamer mécanique MSI Forge GK300",
+      "brand": "MSI ",
+      "price": 105,
+      "reference": "S11-04US20G-HH9",
+      "description": "Clavier mécanique MSI Forge GK300 - Norme QWERTY - Rétroéclairage LED RGB arc-en-ciel - 105x Touches - Interface USB - Touches ergonomiques - Résistant aux projections d'eau - Touches de raccourcis (multimédia / luminosité) - Base avec bandes en caoutchouc - Fonction anti-ghosting - Dimensions 448 x 139 x 39mm- Poids 1045g - Garantie 1 an",
+      "category": "Claviers",
+      "image": "assets/images/c1.jpg",
+      "image1": "assets/images/c1.jpg",
+      "image2": "assets/images/c2.jpg",
+      "image3": "assets/images/c3.jpg",
+      "images": [
+        "assets/images/c1.jpg",
+        "assets/images/c2.jpg",
+        "assets/images/c3.jpg"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Casque Micro GAMER AQIRYS CYGNUS RGB",
+      "brand": "AQIRYS CYGNUS",
+      "price": 105,
+      "reference": "AQIRYS-CYGNUS",
+      "description": "Casque Micro GAMER AQIRYS CYGNUS RGB - Fréquence de réponse: 20 Hz - 20 kHz - Sensibilité: 119 ± 3 dB - Impédance: 16 ± 15% Ω - Taille du pilote: 50 mm - Rétroéclairage RGB - Microphone Omnidirectionnel - Micro Flexible - Réponse en fréquence du microphone: 100 Hz - 10 kHz - Sensibilité du microphone: -42 ± 3dB - Impédance du microphone: ≦ 2200 Ω - Taille du micro: 6.0 x 2.7 mm - Télécommande en ligne - Connexion Filaire - Connecteurs: USB 2.0 - Longueur de câble: 2 m - Poids: 210 g - Couleur: Noir - Garantie 1 an",
+      "category": "Casques",
+      "image": "assets/images/ca1.jpg",
+      "image1": "assets/images/ca1.jpg",
+      "image2": "assets/images/ca2.jpg",
+      "image3": "assets/images/ca3.jpg",
+      "images": [
+        "assets/images/ca1.jpg",
+        "assets/images/ca2.jpg",
+        "assets/images/ca3.jpg"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Casque Gaming Sans Fil Spirit of Gamer Xpert-H900",
+      "brand": "Spirit of Gamer",
+      "price": 209,
+      "reference": "MIC-XH900",
+      "description": "Casque Gaming Sans Fil Spirit of Gamer Xpert-H900 - Rétro-éclairage bleu - Compatible avec PS4 / Xbox One / Nintendo Switch / PC / MAC - Connexion RF 2.4 GHz - Portée sans fil jusqu'à 8 m - Son Stéréo 2.0 - Microphone omnidirectionnel flexible et rétractable - Haut-parleurs de 50 mm  pour un son clair et des basses puissantes - Coussinets simili-cuir rembourrés et confortable - Télécommande avec contrôle du volume et fonction mute - Batterie rechargeable (4 heures), jusqu'à 10 heures d'autonomie - Fréquence : 100 Hz - 50 kHz - Poids : 330 g - Garantie 1 an",
+      "category": "Casques",
+      "image": "assets/images/cq.jpg",
+      "image1": "assets/images/cq.jpg",
+      "image2": "assets/images/cq2.jpg",
+      "image3": "assets/images/cq3.jpg",
+      "images": [
+        "assets/images/cq.jpg",
+        "assets/images/cq2.jpg",
+        "assets/images/cq3.jpg"
+      ]
+    }
+  ],
+  "cart": []
+}

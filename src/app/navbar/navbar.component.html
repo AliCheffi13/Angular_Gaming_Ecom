@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Ushin_store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/category">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/information">Payment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/crud">Product Management</a>
+        </li>
+      </ul>
+  
+      <!-- Icône de panier avec badge -->
+      <div class="cart-icon ml-auto" *ngIf="totalItemCount > 0" (click)="toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="badge badge-danger">{{ totalItemCount }}</span>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Affichage conditionnel du panier -->
+  <div class="cart-container" [ngClass]="{ 'open': isOpen }">
+    <app-cart [cart]="cart" [isOpen]="isOpen" (closeCart)="isOpen = false"></app-cart>
+  </div>
+  

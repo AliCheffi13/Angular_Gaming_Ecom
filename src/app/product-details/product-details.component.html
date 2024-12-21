@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <div class="row">
+      <!-- Section gauche : Image du produit -->
+      <div class="col-md-6">
+        <!-- Grande image -->
+        <div class="main-image">
+          <img [src]="selectedImage || product.image" class="img-fluid" alt="{{ product.name }}">
+        </div>
+  
+        <!-- Miniatures d'images -->
+        <div class="image-thumbnails mt-3">
+          <div class="thumbnail-container">
+            <img *ngFor="let img of product.images; let i = index" [src]="img" alt="product thumbnail"
+              class="thumbnail-image" (click)="changeImage(img)">
+          </div>
+        </div>
+      </div>
+  
+      <!-- Section droite : Détails du produit -->
+      <div class="col-md-6">
+        <h1>{{ product.name }}</h1>
+        <h3>Marque : {{ product.brand }}</h3>
+        <p><strong>Référence :</strong> {{ product.reference }}</p>
+        <p><strong>Prix :</strong> {{ product.price }} TND</p>
+        <p><strong>Description :</strong></p>
+        <!-- Rendu de la description avec innerHTML -->
+        <div [innerHTML]="product.description"></div>
+  
+        <!-- Quantité et bouton d'ajout au panier -->
+        <div class="mt-4">
+          <label for="quantity" class="form-label">Quantité :</label>
+          <input id="quantity" type="number" min="1" max="100" class="form-control w-25 mb-3" [(ngModel)]="quantity">
+          <button class="btn btn-primary" (click)="addToCart(product)">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

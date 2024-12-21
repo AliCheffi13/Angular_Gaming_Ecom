@@ -1,0 +1,33 @@
+<div class="cart-container" [ngClass]="{ 'open': isOpen }">
+  <!-- Close Button -->
+  <button class="close-btn" (click)="close()">
+    <i class="fas fa-times"></i>
+  </button>
+
+  <h4 class="Cart-name">Votre Panier</h4>
+
+  <!-- Cart Items -->
+  <ul *ngIf="cart.length > 0" class="cart-list">
+    <li *ngFor="let item of cart; let i = index" class="cart-item">
+      <img [src]="item.image" alt="{{ item.name }}" class="cart-item-image" />
+      <div class="cart-item-details">
+        <h5>{{ item.name }}</h5>
+        <p>Prix: {{ item.price }} TND</p>
+        <p>Quantité: {{ item.quantity }}</p>
+        <p>Total: {{ item.price * item.quantity }} TND</p>
+      </div>
+      <button class="btn remove-btn" (click)="removeFromCart(i)">
+        <i class="fas fa-trash"></i>
+      </button>
+    </li>
+  </ul>
+
+  <!-- Empty Cart Message -->
+  <p *ngIf="cart.length === 0">Votre panier est vide.</p>
+
+  <!-- Total and Checkout -->
+  <h5 *ngIf="cart.length > 0" class="cart-total">Total: {{ totalPrice }} TND</h5>
+  <button *ngIf="cart.length > 0" class="btn checkout-btn" (click)="goToCheckout()">
+    Accéder au paiement
+  </button>
+</div>

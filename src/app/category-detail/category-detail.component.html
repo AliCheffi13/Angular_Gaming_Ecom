@@ -1,0 +1,25 @@
+<div class="category-container mt-5">
+    <h2>Produits dans la catégorie : {{ categoryName }}</h2>
+  
+    <div *ngIf="productsByCategory.length > 0; else noProducts">
+      <div class="row">
+        <div *ngFor="let product of productsByCategory" class="col-md-4">
+          <div class="card">
+            <a [routerLink]="['/product', product.id]">
+              <img [src]="product.images[0]" class="card-img-top" alt="{{ product.name }}" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="card-text">Prix: {{ product.price }} TND</p>
+              <button class="btn btn-primary" (click)="addToCart(product)">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <ng-template #noProducts>
+      <p>Aucun produit trouvé pour cette catégorie.</p>
+    </ng-template>
+  </div>
+  

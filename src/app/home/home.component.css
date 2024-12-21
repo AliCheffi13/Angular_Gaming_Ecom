@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'StarJedi';
+    src: url('/assets/fonts/GameOfSquids n.ttf') format('truetype');
+  }
+  
+
+
+/* General Container Styles */
+.container.mt-5 {
+    background: linear-gradient(145deg, #1a1a1a, #232323, #0d0d0d);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 
+      0 6px 12px rgba(0, 0, 0, 0.7), /* Stronger outer shadow */
+      inset 0 -6px 8px rgba(0, 0, 0, 0.9), /* Darker inner shadow */
+      inset 0 2px 6px rgba(255, 255, 255, 0.05); /* Slight highlight for depth */
+    border: 1px solid #0b0b0b;
+    background-clip: padding-box; /* Keeps gradient inside the border */
+    overflow: hidden;
+    font-family: 'Game Of Squids', sans-serif !important;
+    color: #E6E6E6; /* Light silver font color for readability */
+  }
+  
+  /* Optional: Add a more intense weathered texture */
+  .container.mt-5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.03) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.03) 50%, rgba(255, 255, 255, 0.03) 75%, transparent 75%);
+    background-size: 30px 30px; /* Smaller, more subtle pattern */
+    opacity: 0.06; /* Faint texture */
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Ensure content stays above the texture */
+  .container.mt-5 > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Headings in Container */
+  .container.mt-5 h1 {
+    color: #FF4C4C; /* Futuristic red for heading */
+    text-shadow: 0 0 10px #FF4C4C, 0 0 20px #FF4C4C;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraphs in Container */
+  .container.mt-5 p {
+    color: #E6E6E6; /* Light silver for paragraphs */
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Carousel-Specific Updates */
+  .container.mt-5 .carousel-indicators button {
+    background-color: #FF4C4C; /* Accent red for indicators */
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .container.mt-5 .carousel-indicators .active {
+    background-color: #FF6666; /* Lighter red for active indicator */
+    transform: scale(1.2);
+  }
+  
+  .container.mt-5 .carousel-item img {
+    filter: brightness(0.9); /* Slightly brighter for image clarity */
+    transition: transform 0.5s ease, filter 0.3s ease;
+  }
+  
+  .container.mt-5 .carousel-item.active img:hover {
+    transform: scale(1.05);
+    filter: brightness(1);
+  }
+  

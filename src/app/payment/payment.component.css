@@ -1,0 +1,140 @@
+/* Apply gradient to the entire page */
+
+
+/* Checkout Page Container */
+.checkout-container {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 0, 60, 0.2), 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Order Summary Section */
+.order-summary h3 {
+  color: #ff003c;
+  border-bottom: 2px solid #ff003c;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.list-group-item {
+  background-color: rgba(20, 20, 20, 0.9);
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #ff003c;
+  border-radius: 5px;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item img {
+  border: 2px solid #ff003c;
+  transition: transform 0.3s;
+}
+
+.list-group-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Totals */
+.order-summary .fw-bold {
+  color: #ff003c;
+  font-size: 1.2rem;
+}
+
+/* Payment Section */
+.payment-section h3 {
+  color: #ff003c;
+  border-bottom: 2px solid #ff003c;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.payment-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-buttons button {
+  background-color: #ff003c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.payment-buttons button:hover {
+  background-color: #cc0033;
+  transform: scale(1.05);
+}
+
+.stripe-card-container {
+  background-color: rgba(20, 20, 20, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(255, 0, 60, 0.3);
+}
+
+/* Invoice Section */
+.invoice-section {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 0, 60, 0.2), 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.invoice-section h3 {
+  color: #ff003c;
+  border-bottom: 2px solid #ff003c;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.invoice-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.invoice-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.invoice-section ul li {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.invoice-section h4 {
+  color: #ff003c;
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}

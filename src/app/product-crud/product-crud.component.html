@@ -1,0 +1,116 @@
+<div class="container mt-5 bg-gradient-to-r from-black via-gray-900 to-black p-5 rounded-lg shadow-lg text-light">
+    <h2 class="text-center mb-4 text-red-600 text-shadow-red">Gestion des Produits</h2>
+
+    <!-- Formulaire d'ajout et modification -->
+    <div class="card p-4 shadow-lg bg-gray-800 border border-red-600 mb-4 rounded-lg">
+      <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <!-- Nom du produit -->
+        <div class="mb-3">
+          <label for="name">Nom</label>
+          <input id="name" formControlName="name" type="text" class="form-control" required />
+        </div>
+  
+        <!-- Marque du produit -->
+        <div class="mb-3">
+          <label for="brand">Marque</label>
+          <input id="brand" formControlName="brand" type="text" class="form-control" required />
+        </div>
+  
+        <!-- Prix du produit -->
+        <div class="mb-3">
+          <label for="price">Prix</label>
+          <input id="price" formControlName="price" type="number" class="form-control" required />
+        </div>
+  
+        <!-- Référence du produit -->
+        <div class="mb-3">
+          <label for="reference">Référence</label>
+          <input id="reference" formControlName="reference" type="text" class="form-control" required />
+        </div>
+  
+        <!-- Catégorie du produit -->
+        <div class="mb-3">
+          <label for="category">Catégorie</label>
+          <select id="category" formControlName="category" class="form-control" required>
+            <option value="Souris">Souris</option>
+            <option value="Laptops">Laptops</option>
+            <option value="Claviers">Claviers</option>
+            <option value="Casques">Casques</option>
+          </select>
+        </div>
+  
+        <!-- Image principale du produit -->
+        <div class="mb-3">
+          <label for="image">Image principale</label>
+          <input id="image" formControlName="image" type="text" class="form-control" required />
+        </div>
+  
+        <!-- Liens des images de miniatures -->
+        <div class="mb-3">
+          <label for="images">Liens des images de miniatures</label>
+          <input id="images-1" formControlName="image1" placeholder="Image 1" type="text" class="form-control" required />
+          <input id="images-2" formControlName="image2" placeholder="Image 2" type="text" class="form-control mt-2" required />
+          <input id="images-3" formControlName="image3" placeholder="Image 3" type="text" class="form-control mt-2" required />
+        </div>
+  <!-- Description du produit -->
+        <div class="mb-3">
+            <label for="description">Description</label>
+            <textarea id="description" formControlName="description" class="form-control" required></textarea>
+        </div>
+  
+        <button type="submit" class="btn btn-success">Enregistrer</button>
+      </form>
+    </div>
+
+    <!-- Liste des produits -->
+    <div class="table-responsive">
+        <table class="table table-dark table-hover text-center border border-red-600">
+            <thead class="bg-gray-800 text-red-500">
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                    <th>Image</th>
+                    <th>Marque</th>
+                    <th>Référence</th>
+                    <th>Description</th>
+                    <th>Catégorie</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products" class="align-middle bg-gray-900 text-light">
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.price | currency: 'EUR':'symbol':'1.2-2' }}</td>
+                    <td>
+                        <img
+                            [src]="product.images[0]"
+                            alt="{{ product.name }}"
+                            class="img-thumbnail"
+                            style="width: 75px;"
+                        />
+                    </td>
+                    <td>{{ product.brand }}</td>
+                    <td>{{ product.reference }}</td>
+                    <td>{{ product.description }}</td>
+                    <td>{{ product.category }}</td>
+                    <td>
+                        <button
+                            class="btn bg-red-500 text-light btn-sm shadow-btn"
+                            (click)="editProduct(product)"
+                        >
+                            Modifier
+                        </button>
+                        <button
+                            class="btn bg-gray-700 text-light btn-sm shadow-btn"
+                            (click)="deleteProduct(product.id)"
+                        >
+                            Supprimer
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

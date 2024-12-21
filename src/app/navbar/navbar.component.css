@@ -1,0 +1,107 @@
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.9), rgba(20, 20, 20, 0.95));
+  box-shadow: 0 4px 15px rgba(255, 0, 60, 0.2), 0 2px 8px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #ff003c;
+  padding: 15px 20px;
+}
+
+.navbar-brand {
+  color: #ff003c;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 0, 60, 0.6);
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #cc0033;
+  text-shadow: 0 0 15px rgba(255, 0, 60, 0.8);
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 100 100px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff003c;
+  text-shadow: 0 0 8px rgba(255, 0, 60, 0.6);
+}
+
+.navbar-toggler {
+  border: 1px solid #ff003c;
+  color: #ff003c;
+}
+
+.navbar-toggler-icon {
+  background-image: linear-gradient(145deg, rgba(255, 0, 60, 0.8), rgba(255, 0, 60, 0.4));
+}
+
+.navbar-nav  {
+  justify-content: center;
+}
+.navbar-nav .nav-item {
+  margin: 0 50px;
+  justify-content: center;
+}
+
+
+/* Cart Icon */
+.cart-icon {
+  position: relative;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #ff003c;
+  transform: scale(1.2);
+}
+
+.cart-icon .badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff003c;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255, 0, 60, 0.6);
+}
+
+/* Conditional Cart Container */
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.95), rgba(20, 20, 20, 1));
+  box-shadow: -2px 0 15px rgba(255, 0, 60, 0.2), -2px 0 10px rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+  transition: right 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.cart-container.open {
+  right: 0;
+}
+
+.cart-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cart-container::-webkit-scrollbar-thumb {
+  background-color: #ff003c;
+  border-radius: 5px;
+}
+
+.cart-container::-webkit-scrollbar-track {
+  background-color: rgba(20, 20, 20, 0.8);
+}
